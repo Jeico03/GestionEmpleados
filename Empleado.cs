@@ -6,11 +6,11 @@ namespace GestionEmpleados
 {
     internal class Empleado
     {
-        private int Id { get; }
+        public int Id { get; set; }
 
-        private string Nombre { get; }
+        public string Nombre { get; set; }
 
-        private int SalarioBase { get; }
+        public int SalarioBase { get; set; }
 
         public Empleado(int id, string nombre, int salarioBase)
         {

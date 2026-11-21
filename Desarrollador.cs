@@ -6,7 +6,7 @@ namespace GestionEmpleados
 {
     internal class Desarrollador : Empleado
     {
-        private string LenguajePrincipal { get; }
+        public string LenguajePrincipal { get; set; }
 
         public Desarrollador(int id, string nombre, int salarioBase, string lenguajePrincipal) : base(id, nombre, salarioBase)
         {
