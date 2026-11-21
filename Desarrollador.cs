@@ -8,7 +8,7 @@ namespace GestionEmpleados
     {
         public string LenguajePrincipal { get; set; }
 
-        public Desarrollador(int id, string nombre, int salarioBase, string lenguajePrincipal) : base(id, nombre, salarioBase)
+        public Desarrollador(int id, string nombre, decimal salarioBase, string lenguajePrincipal) : base(id, nombre, salarioBase)
         {
             LenguajePrincipal = lenguajePrincipal;
         }

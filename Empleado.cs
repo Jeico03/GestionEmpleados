@@ -10,9 +10,9 @@ namespace GestionEmpleados
 
         public string Nombre { get; set; }
 
-        public int SalarioBase { get; set; }
+        public decimal SalarioBase { get; set; }
 
-        public Empleado(int id, string nombre, int salarioBase)
+        public Empleado(int id, string nombre, decimal salarioBase)
         {
             Id = id;
             Nombre = nombre;
