@@ -21,7 +21,14 @@
         {
             foreach (Empleado empleado in Empleados)
             {
-                Console.WriteLine($"ID: {empleado.Id}, Nombre: {empleado.Nombre}, Salario Base: {empleado.SalarioBase}");
+                if (empleado is Desarrollador desarrollador)
+                {
+                    Console.WriteLine($"ID: {desarrollador.Id}, Nombre: {desarrollador.Nombre}, Salario Base: {desarrollador.SalarioBase}, Lenguaje Principal: {desarrollador.LenguajePrincipal}");
+                }
+                else
+                {
+                    Console.WriteLine($"ID: {empleado.Id}, Nombre: {empleado.Nombre}, Salario Base: {empleado.SalarioBase}");
+                }
             }
         }
     }
